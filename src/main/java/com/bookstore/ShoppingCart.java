@@ -4,17 +4,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ShoppingCart {
-    private List<Book> booksToBuy = new ArrayList<>();
+    private List<MediaItem> itemsInCart = new ArrayList<>();
 
-    public void add(Book book) {
-        booksToBuy.add(book);
+    public void add(MediaItem item) {
+
+        itemsInCart.add(item);
     }
 
     public double getTotalPrice() {
         double total = 0.0;
 
-        for (Book book : booksToBuy) {
-            total += book.getPrice();
+        for (MediaItem item : itemsInCart) {
+            total += item.getPrice();
         }
         return total;
     }
@@ -22,8 +23,8 @@ public class ShoppingCart {
     public String receipt() {
         String receipt = "\nReceipt\n";
 
-        for (Book book : booksToBuy) {
-            receipt += book;
+        for (MediaItem item : itemsInCart) {
+            receipt += item;
             receipt += "\n";
         }
         receipt += "\nTotal: $" + getTotalPrice();
