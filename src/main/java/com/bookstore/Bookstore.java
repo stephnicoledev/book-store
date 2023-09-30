@@ -16,6 +16,8 @@ public class Bookstore {
 
         Music speakNow = new Music("Speak Now", "Taylor Swift", "Pop", 11.99);
 
+        Beverage myFavoriteCoffee = new Beverage("Grande", "Dark Roast", new String[] {"Iced", "Oat Milk", "Cinnamon Dolce Syrup"}, 4.98);
+
 
 
         cart.add(ifWeWereVillains);
@@ -25,6 +27,7 @@ public class Bookstore {
         cart.add(youAgain);
         cart.add(toyStory);
         cart.add(speakNow);
+        cart.add(myFavoriteCoffee);
 
         System.out.println(cart.receipt());
     }
