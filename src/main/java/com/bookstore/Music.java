@@ -1,5 +1,7 @@
 package com.bookstore;
 
+import java.text.DecimalFormat;
+
 public class Music extends MediaItem {
     private String album;
     private String artist;
@@ -41,9 +43,10 @@ public class Music extends MediaItem {
 
     @Override
     public String toString() {
+        DecimalFormat money = new DecimalFormat("$0.00");
         return album + ' ' +
                 "by " + artist + ' ' +
                 "(" + genre + ") " +
-                "| $" + price;
+                "| " + money.format(price);
     }
 }

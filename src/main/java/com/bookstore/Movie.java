@@ -1,5 +1,7 @@
 package com.bookstore;
 
+import java.text.DecimalFormat;
+
 public class Movie extends MediaItem {
     private int runLength;
 
@@ -22,8 +24,9 @@ public class Movie extends MediaItem {
 
     @Override
     public String toString() {
+        DecimalFormat money = new DecimalFormat("$0.00");
         return title + ' ' +
                 "(" + runLength + " min) " +
-                "| $" + price;
+                "| " + money.format(price);
     }
 }

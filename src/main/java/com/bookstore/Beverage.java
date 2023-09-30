@@ -1,5 +1,6 @@
 package com.bookstore;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -29,6 +30,12 @@ public class Beverage extends CafeItem implements Purchasable {
 
     @Override
     public String toString() {
-        return size + " " + name + " (" + String.join(", ", additions) + ") | $" + price;
+        DecimalFormat money = new DecimalFormat("$0.00");
+        return size + " " + name + " (" + String.join(", ", additions) + ") | " + money.format(price);
+    }
+
+    @Override
+    public boolean isTaxable() {
+        return true;
     }
 }

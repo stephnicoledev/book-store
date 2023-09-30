@@ -4,7 +4,7 @@ public class Bookstore {
 
     public static void main(String[] args) {
         System.out.println("Welcome to Books & Beans!");
-        ShoppingCart cart = new ShoppingCart();
+        ShoppingCart cart = new ShoppingCart(0.075);
 
         Book ifWeWereVillains = new Book("If We Were Villains", "M.L. Rio", 17.99);
         Book theOnceAndFutureWitches = new Book("The Once and Future Witches", "Alix E. Harrow", 17.99);
@@ -17,6 +17,7 @@ public class Bookstore {
         Music speakNow = new Music("Speak Now", "Taylor Swift", "Pop", 11.99);
 
         Beverage myFavoriteCoffee = new Beverage("Grande", "Dark Roast", new String[] {"Iced", "Oat Milk", "Cinnamon Dolce Syrup"}, 4.98);
+        Beverage chaiTea = new Beverage("Tall", "Chai Tea Latte", new String[] {"Hot", "Soy Milk"}, 5.00);
 
 
 
@@ -28,6 +29,7 @@ public class Bookstore {
         cart.add(toyStory);
         cart.add(speakNow);
         cart.add(myFavoriteCoffee);
+        cart.add(chaiTea);
 
         System.out.println(cart.receipt());
     }
