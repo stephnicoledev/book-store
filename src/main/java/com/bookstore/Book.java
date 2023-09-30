@@ -11,6 +11,8 @@ public class Book {
         this.price = price;
     }
 
+    public Book() {}
+
     public String getTitle() {
         return title;
     }
@@ -37,11 +39,9 @@ public class Book {
 
     @Override
     public String toString() {
-        return "Book{" +
-                "title='" + title + '\'' +
-                ", author='" + author + '\'' +
-                ", price=" + price +
-                '}';
+        return title + ' ' +
+                "by " + author + ' ' +
+                "| $" + price;
     }
 }
 
