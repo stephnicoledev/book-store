@@ -18,4 +18,15 @@ public class ShoppingCart {
         }
         return total;
     }
+
+    public String receipt() {
+        String receipt = "\nReceipt\n";
+
+        for (Book book : booksToBuy) {
+            receipt += book.bookDetails();
+            receipt += "\n";
+        }
+        receipt += "\nTotal: $" + getTotalPrice();
+        return receipt;
+    }
 }
