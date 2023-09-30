@@ -23,7 +23,7 @@ public class ShoppingCart {
         String receipt = "\nReceipt\n";
 
         for (Book book : booksToBuy) {
-            receipt += book.bookDetails();
+            receipt += book;
             receipt += "\n";
         }
         receipt += "\nTotal: $" + getTotalPrice();

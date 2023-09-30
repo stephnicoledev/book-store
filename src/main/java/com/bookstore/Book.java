@@ -37,7 +37,8 @@ public class Book {
         this.price = price;
     }
 
-    public String bookDetails() {
+    @Override
+    public String toString() {
         return title + ' ' +
                 "by " + author + ' ' +
                 "| $" + price;
