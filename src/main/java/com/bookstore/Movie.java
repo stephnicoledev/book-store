@@ -17,6 +17,9 @@ public class Movie extends MediaItem {
         this.price = price;
     }
 
+    public Movie() {
+    }
+
     @Override
     public String toString() {
         return title + ' ' +

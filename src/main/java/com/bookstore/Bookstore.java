@@ -14,6 +14,8 @@ public class Bookstore {
 
         Movie toyStory = new Movie("Toy Story", 81, 19.99);
 
+        Music speakNow = new Music("Speak Now", "Taylor Swift", "Pop", 11.99);
+
 
 
         cart.add(ifWeWereVillains);
@@ -22,6 +24,7 @@ public class Bookstore {
         cart.add(theMaidens);
         cart.add(youAgain);
         cart.add(toyStory);
+        cart.add(speakNow);
 
         System.out.println(cart.receipt());
     }
