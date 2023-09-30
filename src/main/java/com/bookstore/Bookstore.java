@@ -4,6 +4,7 @@ public class Bookstore {
 
     public static void main(String[] args) {
         System.out.println("Welcome to Books & Beans!");
+        ShoppingCart cart = new ShoppingCart();
 
         Book ifWeWereVillains = new Book("If We Were Villains", "M.L. Rio", 17.99);
         Book theOnceAndFutureWitches = new Book("The Once and Future Witches", "Alix E. Harrow", 17.99);
@@ -11,15 +12,18 @@ public class Bookstore {
         Book theMaidens = new Book("The Maidens", "Alex Michaelides", 17.99);
         Book youAgain = new Book("You Again", "Kate Goldbeck", 24.99);
 
-        ShoppingCart autumnBooks = new ShoppingCart();
+        Movie toyStory = new Movie("Toy Story", 81, 19.99);
 
-        autumnBooks.add(ifWeWereVillains);
-        autumnBooks.add(theOnceAndFutureWitches);
-        autumnBooks.add(suchSharpTeeth);
-        autumnBooks.add(theMaidens);
-        autumnBooks.add(youAgain);
 
-        System.out.println(autumnBooks.receipt());
+
+        cart.add(ifWeWereVillains);
+        cart.add(theOnceAndFutureWitches);
+        cart.add(suchSharpTeeth);
+        cart.add(theMaidens);
+        cart.add(youAgain);
+        cart.add(toyStory);
+
+        System.out.println(cart.receipt());
     }
 
 }
