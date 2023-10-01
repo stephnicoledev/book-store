@@ -40,8 +40,21 @@ public class ShoppingCart {
         return getSubtotalPrice() + getTax();
     }
 
+    public String checkOutReceipt() {
+        String libraryReceipt = "\nCheckout Receipt\n";
+        libraryReceipt += "No. of items: " + itemsToBuy.size();
+        libraryReceipt += "\n\n";
+        for (Purchasable item : itemsToBuy) {
+            libraryReceipt += item;
+            libraryReceipt += "\n";
+        }
+        return libraryReceipt;
+    }
+
     public String receipt() {
-        String receipt = "\nReceipt\n\n";
+        String receipt = "\nCheckout Receipt\n";
+        receipt += "No. of items: " + itemsToBuy.size();
+        receipt += "\n\n";
         for (Purchasable item : itemsToBuy) {
             receipt += item;
             receipt += "\n";

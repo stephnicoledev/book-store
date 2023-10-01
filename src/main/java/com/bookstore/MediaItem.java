@@ -18,7 +18,7 @@ public class MediaItem implements Purchasable {
 
     @Override
     public boolean isTaxable() {
-        return true;
+        return false;
     }
 
     public void setPrice(double price) {

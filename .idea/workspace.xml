@@ -37,8 +37,10 @@
   </component>
   <component name="RunManager">
     <configuration name="Bookstore" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../../../Program Files/OpenJDK/jdk-11.0.13+8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.bookstore.Bookstore" />
-      <module name="bookstore" />
+      <module name="bookproject" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.bookstore.*" />
