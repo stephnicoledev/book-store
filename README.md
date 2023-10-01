@@ -23,12 +23,12 @@
 <ul>
   <li>Note: I changed the modified in MediaItem from 'private' to 'protected' so the data members can be accessed within their own package, but still remain private outside of the package.</li>
 </ul>
-![LibraryApp_Inheritance drawio](https://github.com/stephnicoledev/bookproject/assets/26665747/e3a9e10a-c99f-42b1-a6e7-9a3a61fe014d)
+<img src="img/Inheritance_Diagram.png">
 
 <h3>Polymorphism</h3>
 <p><strong>Polymorphism </strong> means "many forms" and it allows us to perform a certain action in multiple ways.</p>
 <p><strong>💻 Example:</strong> Any item that the store sells is 'purchasable', so I created an interface that defines a contract of properties and methods that any class implementing it must define. The ShoppingCart class must now implement the following methods: getPrice() and isTaxable(). For this application, purchasable items may take on many forms such as a cozy mystery novel, a soothing jazz album, or a grande vanilla cold brew.</p>
-<em>INSERT IMAGE</em>
+<img src="img/Polymorphism_Diagram.png">
 
 <h4>What I learned:</h4>
 <ul>
