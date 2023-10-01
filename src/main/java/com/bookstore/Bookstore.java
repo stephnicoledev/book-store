@@ -14,7 +14,7 @@ public class Bookstore {
         ShoppingCart cart = new ShoppingCart(0.075);
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Welcome to The Public Library!");
+        System.out.println("Welcome to Books & Beans!");
         System.out.println("The date today is: " + currentDate);
 
 
